@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
+  /*images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "images.unsplash.com",
+        hostname: "",
       },
     ],
-  },
+  },*/
   webpack: (config) => {
     // load worker files as a urls by using Asset Modules
     // https://webpack.js.org/guides/asset-modules/

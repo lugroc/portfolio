@@ -19,22 +19,26 @@ export default function PDFViewer() {
     <div className="flex items-center flex-col">
       <a 
         className="flex items-center bg-white px-7 py-3 gap-2 m-10 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/20"
-        href='./cv.pdf'
+        href='/cv.pdf'
         download>
           Download File
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
       </a>
-      <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
-        {Array.from({ length: numPages }, (_, index) => (
-          <Page
-            key={`page_${index + 1}`}
-            pageNumber={index + 1}
-            renderAnnotationLayer={false}
-            renderTextLayer={false}
-            scale={1.2}
-          />
-        ))}
-      </Document>
+      <div className='max-w-full'>
+        <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
+          {Array.from({ length: numPages }, (_, index) => (
+            <Page
+              key={`page_${index + 1}`}
+              pageNumber={index + 1}
+              renderAnnotationLayer={false}
+              renderTextLayer={false}
+              scale={1.25}
+              
+            />
+          ))}
+        </Document>
+      </div>
+      
     </div>
   );
 }

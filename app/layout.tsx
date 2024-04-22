@@ -10,8 +10,12 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  icons: {
+    icon: '/favicon.ico',
+  },
   title: "Luciano Guerrero",
   description: "Luciano is a Developer proficient in Python, Node.js and React.",
+  charset:"utf-8",
 };
 
 export default function RootLayout({

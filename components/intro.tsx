@@ -98,6 +98,7 @@ export default function Intro() {
           href="https://www.linkedin.com/in/luciano-guerrero-564485301/"
           target="_blank"
           rel="noopener noreferrer"
+          title="Linkedin link"
         >
           <BsLinkedin />
         </a>
@@ -107,6 +108,7 @@ export default function Intro() {
           href="https://github.com/lugroc"
           target="_blank"
           rel="noopener noreferrer"
+          title="Github link"
         >
           <FaGithubSquare />
         </a>
