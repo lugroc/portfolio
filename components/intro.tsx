@@ -22,24 +22,16 @@ export default function Intro() {
     >
       <div className="flex items-center justify-center flex-col lg:flex-row">
         <div className="relative">
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              duration: 0.2,
-            }}
-          >
-            <Image
-              src="/portrait.png"
-              alt="Portrait"
-              width="192"
-              height="192"
-              quality="95"
-              priority={true}
-              className=" bg-sky-500 h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
-            />
-          </motion.div>
+          
+          <Image
+            src="/portrait.png"
+            alt="Portrait"
+            width="192"
+            height="192"
+            quality="95"
+            priority={true}
+            className=" bg-sky-500 h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+          />
 
           <motion.span
             className="absolute bottom-0 right-0 text-4xl"
@@ -65,13 +57,8 @@ export default function Intro() {
         <span className="font-bold text-orange-500">Developer</span> and collaborate to create impactful solutions
       </div>
       
-      <motion.div
+      <div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.1,
-        }}
       >
         <Link
           href="#contact"
@@ -84,7 +71,7 @@ export default function Intro() {
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
-
+        
         <Link
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/cv"
@@ -112,7 +99,7 @@ export default function Intro() {
         >
           <FaGithubSquare />
         </a>
-      </motion.div>
+      </div>
     </section>
   );
 }

@@ -9,12 +9,9 @@ export default function About() {
   const { ref } = useSectionInView("About");
 
   return (
-    <motion.section
+    <section
       ref={ref}
       className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
@@ -29,8 +26,8 @@ export default function About() {
       </p>
 
       <p>
-        Currently reading <span className="italic">100 Go Mistakes and How to Avoid Them</span>.
+        Currently reading <span className="italic">100 Go Mistakes and How to Avoid Them</span>. My workflow for coding is Linux using NeoVim as my IDE.
       </p>
-    </motion.section>
+    </section>
   );
 }

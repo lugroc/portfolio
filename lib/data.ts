@@ -30,7 +30,7 @@ export const projectsData = [
     description:
       "Developed a web tool that deletes the background of an image utilizing a pretrained model.",
     tags: ["Python", "Flask", "JavaScript", "HTML", "CSS", "Docker", "Google Cloud"],
-    flags: ["live", "Cold Start"],
+    flags: ["Online", "Cold Start"],
     imageUrl: backgroundremoverImg,
     url: "https://backgroundremover-h6cota2n5a-tl.a.run.app/",
     target: "_blank",
