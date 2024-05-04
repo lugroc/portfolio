@@ -2,7 +2,6 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
@@ -16,17 +15,11 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        While studying{" "}
-        <span className="font-medium">Software Engineering</span> I made the decision to focus on{" "}
-        <span className="font-medium">Node.js</span> developing{" "}
-        <span className="italic">RESTful APIs</span> with Express.js, then i incorporated{" "} 
-        <span className="font-medium">TypeScript and React</span> to my stack. 
-        My passion for continuous learning made me explore cloud technologies like{" "}
-        <span className="font-medium">AWS, Google Cloud and Docker.</span>
-      </p>
-
-      <p>
-        Currently reading <span className="italic">100 Go Mistakes and How to Avoid Them</span>. My workflow for coding is Linux using NeoVim as my IDE.
+        My workflow for coding is{" "}
+        <span className="font-medium">Linux</span> with{" "}
+        <span className="font-medium">NeoVim</span>, i love the performance and moving around without mouse interaction.
+        Currently reading <span className="italic">"100 Go Mistakes and How to Avoid Them"</span> but I usually use{" "} 
+        <span className="font-medium">Python, Java, Node.js and React</span>. 
       </p>
     </section>
   );

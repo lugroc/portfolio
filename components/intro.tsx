@@ -54,7 +54,7 @@ export default function Intro() {
 
       <div className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl">
         A <span className="font-bold text-orange-500">Software Engineer</span> aspiring to join a team where I can demonstrate my skills as{" "}
-        <span className="font-bold text-orange-500">Developer</span> and collaborate to create impactful solutions
+        <span className="font-bold text-orange-500">Developer</span> and collaborate to create efective solutions.
       </div>
       
       <div
